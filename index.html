@@ -6,17 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persons</title>
-    <script src="company.js" defer></script>
-    <script src="16-hw-persons/script.js"></script>
-
-    <style>
-        button{
-            margin-left: 15px;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-
+    <script type="module" src="employee.js" defer></script>
+    <script type="module" src="person.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"></head>
 <body>
 <div>
     <label>ID:
@@ -29,19 +22,23 @@
         <input type="text" id="lastName">
     </label>
     <label>Age:
-        <input type="number" min="0" id="age">
+        <input type="number" min="0" id="ageId">
+    </label>
+    <label>Salary:
+        <input type="number" min="0" id="salaryId">
     </label>
 </div>
-<button type="button" id="addPerson">Add person</button>
+<button type="button" id="addPerson">Add employee</button>
 <button type="button" id="calcStats">Get stats</button>
 <button type="button" id="hideStats">Hide stats</button>
+<button type="button" id="editSalary">Edit Salary</button>
+<button type="button" id="removeEmployee">Delete employee</button>
 <div id="stats">
     <h2>Stats</h2>
 </div>
-<div>
+<div id="list">
     <h2>Persons</h2>
-    <ol id="personsList"></ol>
 </div>
 </body>
 
-</html>
+</html
